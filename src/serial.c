@@ -559,9 +559,9 @@ static void evaluateCommand(void)
             serialize16(heading);
             break;
         case MSP_ALTITUDE:
-            headSerialReply(6);
+            headSerialReply(8);
             serialize32(EstAlt);
-            serialize16(vario);
+            serialize32(vario);
             break;
         case MSP_ANALOG:
             headSerialReply(7);
